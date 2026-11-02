@@ -1,0 +1,11 @@
+# ── LangChain-Kern ────────────────────────────────────────────────
+langchain>=1.0                    # Chains, LCEL, Agent-Bausteine (Phase 2)
+langchain-openai>=1.0             # ChatOpenAI → lokaler Endpoint & ChatGPT
+langchain-text-splitters>=0.3     # RecursiveCharacterTextSplitter
+
+# ── Konfiguration & CLI ───────────────────────────────────────────
+pydantic-settings>=2.5            # typsicheres Laden der .env
+rich>=13.7                        # schöne Konsolenausgabe
+
+# ── optional: Claude (PROVIDER=anthropic) ─────────────────────────
+# langchain-anthropic>=1.0

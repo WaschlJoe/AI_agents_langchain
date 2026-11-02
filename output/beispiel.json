@@ -1,0 +1,57 @@
+{
+  "source_file": "beispiel.md",
+  "total_chunks": 4,
+  "chunks": [
+    {
+      "summary": "Der Textabschnitt definiert lokale LLMs als auf eigener Hardware ausgeführte Sprachmodelle, die im Gegensatz zu Cloud- oder API-Diensten keine Datenverlagerung außerhalb des Geräts erfordern. Er betont den Nutzen für sensible Daten und Offline-Einsätze sowie die technische Basis in Transformer-Architekturen und quantisierten Formaten wie GGUF.",
+      "category": "fakten",
+      "key_points": [
+        "Lokale LLMs werden auf eigener Hardware statt in der Cloud ausgeführt.",
+        "Daten verlassen bei lokaler Ausführung nicht das eigene Gerät.",
+        "Besonders relevant für sensible Dokumente, interne Firmendaten und Offline-Nutzung.",
+        "Die meisten modernen lokalen Modelle basieren auf der Transformer-Architektur.",
+        "Typische Auslieferung erfolgt in quantisierten Formaten wie GGUF mit 4-Bit- bis 8-Bit-Präzision.",
+        "Quantisierung reduziert den Speicherbedarf, kann aber zu leichtem Qualitätsverlust gegenüber Vollpräzision führen."
+      ],
+      "confidence": 0.95
+    },
+    {
+      "summary": "Der Textabschnitt beschreibt die ersten Schritte zur Nutzung von LM Studio: Installation, Modellwahl, Start eines lokalen OpenAI-kompatiblen Servers auf Port 1235 sowie Aufruf der API über einen kompatiblen Client. Es wird betont, dass der verwendete Modellname exakt dem Eintrag in „My Models“ entsprechen muss.",
+      "category": "anleitung",
+      "key_points": [
+        "LM Studio von der offiziellen Website herunterladen und installieren.",
+        "In „My Models“ ein Modell laden; für den Einstieg eignen sich Modelle mit 8 bis 20 Milliarden Parametern, sofern genügend RAM vorhanden ist.",
+        "Faustregel: mindestens so viel freier RAM wie das Modell an Speicher belegt.",
+        "In der Sektion „Developer“ den lokalen Server auf Port 1235 starten.",
+        "Der Server stellt eine OpenAI-kompatible API unter `http://localhost:1235/v1` bereit.",
+        "Die API kann mit jedem OpenAI-kompatiblen Client abgerufen werden.",
+        "Der Modellname in den Anfragen muss exakt dem Namen entsprechen, der in LM Studio unter „My Models“ angezeigt wird; andernfalls liefert der Server einen Fehler."
+      ],
+      "confidence": 0.95
+    },
+    {
+      "summary": "Der Abschnitt beschreibt die praktischen Vorteile lokaler LLM-Setups, insbesondere im Hinblick auf Datenschutz und die Verarbeitung größerer Dokumente. Er empfiehlt Modelle zwischen 14 und 20 Milliarden Parametern als Sweet Spot für strukturierte Analysen und Tool-Calling auf einem Desktop mit 32 GB RAM. Kleine Modelle unter 8 Milliarden Parametern eignen sich nur für einfache Aufgaben, während größere Modelle langsamer sind. RAG wird als häufiger Anwendungsfall genannt.",
+      "category": "anleitung",
+      "key_points": [
+        "Lokale Setups sind sinnvoll bei Datenschutzanforderungen und regelmäßigem Umgang mit größeren Dokumenten.",
+        "Modelle unter 8 Milliarden Parametern reichen für einfache Zusammenfassungen aus, verlieren aber bei mehrschrittigen Aufgaben an Zuverlässigkeit.",
+        "Der Sweet Spot liegt zwischen 14 und 20 Milliarden Parametern: gut für strukturierte Analysen und Tool-Calling, praktikabel auf einem Desktop mit 32 GB RAM.",
+        "Größere Modelle bieten mehr Leistung, führen aber zu langsamerer Generierung.",
+        "RAG ist ein häufiger Anwendungsfall lokaler Modelle, da Dokumente lokal indexiert und abgefragt werden können."
+      ],
+      "confidence": 0.95
+    },
+    {
+      "summary": "Der Abschnitt erklärt, dass die Geschwindigkeit lokaler Modelle von GPU, Modellgröße und Quantisierung abhängt.",
+      "category": "fakten",
+      "key_points": [
+        "Geschwindigkeit hängt von GPU ab",
+        "Geschwindigkeit hängt von Modellgröße ab",
+        "Geschwindigkeit hängt von Quantisierung ab"
+      ],
+      "confidence": 0.95
+    }
+  ],
+  "overall_summary": "Das Dokument erklärt lokale LLMs als datenschutzfreundliche, lokal laufende Sprachmodelle und beschreibt deren Einrichtung über LM Studio mit OpenAI-kompatibler API. Es empfiehlt für Desktop-Nutzung Modelle mit 14–20 Milliarden Parametern bei ausreichendem RAM, nennt GPU, Modellgröße und Quantisierung als Geschwindigkeitsfaktoren; dominant ist der Inhaltstyp Anleitung.",
+  "dominant_category": "fakten"
+}
